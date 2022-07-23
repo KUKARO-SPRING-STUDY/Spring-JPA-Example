@@ -1,0 +1,1 @@
+docker exec -it jpa_mysql /bin/bash

@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  db:
+    image: jpa_mysql
+#    volumes:
+#      - ./mysql-init-files/:/docker-entrypoint-initdb.d/
+    restart: always
+    container_name: jpa_mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD="true"
+    ports:
+      - '13306:3306'
+    expose:
+      - '13306'
