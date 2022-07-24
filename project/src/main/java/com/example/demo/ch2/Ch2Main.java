@@ -27,7 +27,7 @@ public class Ch2Main {
     private static void logic(EntityManager em) {
         Member member = new Member();
         member.setId("KUKARO");
-        member.setName("kukaro");
+        member.setUserName("kukaro");
         member.setAge(20);
         em.persist(member);
         member.setAge(20);

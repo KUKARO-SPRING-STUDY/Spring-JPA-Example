@@ -1,0 +1,1 @@
+bat_clean.bat && bat_init.bat
