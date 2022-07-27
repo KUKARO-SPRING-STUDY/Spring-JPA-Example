@@ -1,11 +1,12 @@
 package com.example.demo.ch2;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import lombok.extern.slf4j.Slf4j;
 
-public class Ch2Main {
+import javax.persistence.*;
+import java.util.List;
+
+@Slf4j
+public class Ch2MainJPQL {
     public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
         EntityManager em = emf.createEntityManager();
@@ -25,11 +26,8 @@ public class Ch2Main {
     }
 
     private static void logic(EntityManager em) {
-        Member member = new Member();
-        member.setId("KUKARO");
-        member.setUserName("kukaro");
-        member.setAge(20);
-        em.persist(member);
-        member.setAge(20);
+        TypedQuery<Member> query = em.createQuery("select m from Member m", Member.class);
+        List<Member> members = query.getResultList();
+        System.out.println(members);
     }
 }
