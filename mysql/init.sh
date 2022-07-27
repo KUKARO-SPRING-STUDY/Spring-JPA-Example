@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker build -t mm .
+docker build -t jpa_mysql .
 docker-compose up -d

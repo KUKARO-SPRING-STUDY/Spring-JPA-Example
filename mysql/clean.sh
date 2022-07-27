@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-docker stop mmc
-docker rm mmc
+docker stop jpa_mysql
+docker rm jpa_mysql
