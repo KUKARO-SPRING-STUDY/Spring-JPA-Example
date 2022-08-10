@@ -20,4 +20,67 @@
             <property name="hibernate.use_sql_comments" value="true"/>
         </properties>
     </persistence-unit>
+
+    <persistence-unit name="jpabook_ch4">
+        <!-- entity클래스 인식 -->
+        <class>com.example.demo.ch4.Member</class>
+        <properties>
+            <!--필수 속성-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:13306/mydb?characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+<!--            스키마 자동생성 기능-->
+<!--            애플리케이션 실행 시점에 데이터베이스를 자동으로 생성함-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="jpabook_ch4_2">
+        <!-- entity클래스 인식 -->
+        <class>com.example.demo.ch4.Member2</class>
+        <properties>
+            <!--필수 속성-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:13306/mydb?characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <!--            스키마 자동생성 기능-->
+            <!--            애플리케이션 실행 시점에 데이터베이스를 자동으로 생성함-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="jpabook_ch4_3">
+        <!-- entity클래스 인식 -->
+        <class>com.example.demo.ch4.Member3</class>
+        <properties>
+            <!--필수 속성-->
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:13306/mydb?characterEncoding=UTF-8&amp;serverTimezone=UTC"/>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <!--            스키마 자동생성 기능-->
+            <!--            애플리케이션 실행 시점에 데이터베이스를 자동으로 생성함-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+
+        </properties>
+    </persistence-unit>
 </persistence>

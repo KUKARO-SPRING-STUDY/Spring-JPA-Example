@@ -1,22 +1,32 @@
 package com.example.demo.ch4;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.Data;
+
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name="member")
+@Table(name = "member4")
+@Data
 public class Member {
     @Id
     @Column(name = "id", nullable = false)
-    private Long id;
+    private String id;
 
-    public Long getId() {
-        return id;
-    }
+    @Column(name = "name")
+    private String name;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private int age;
+
+    @Enumerated(EnumType.STRING)
+    private RoleType roleType;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdDate;
+
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date lastModifiedDate;
+
+    @Lob
+    private String description;
 }

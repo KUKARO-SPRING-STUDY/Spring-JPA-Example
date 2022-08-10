@@ -8,12 +8,12 @@ import java.util.Date;
 @Entity
 @Table(name = "member4")
 @Data
-public class Member {
+public class Member2 {
     @Id
     @Column(name = "id", nullable = false)
     private String id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false, length = 10)
     private String name;
 
     private int age;

@@ -5,9 +5,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class Ch4MainCreate2 {
+public class Ch4MainCreate3 {
     public static void main(String[] args) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook_ch4_2");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook_ch4_3");
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
 
