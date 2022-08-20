@@ -1,4 +1,4 @@
-CREATE DATABASE mydb;
+CREATE DATABASE IF NOT EXISTS mydb;
 
 use mydb;
 
