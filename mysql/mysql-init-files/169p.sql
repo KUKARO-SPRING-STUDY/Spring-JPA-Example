@@ -17,4 +17,4 @@ create table team5
     primary key (team_id)
 );
 
-alter table member5 add constraint fk_member_team foreign key (team_id) references team5;
+alter table member5 add constraint fk_member5_team5 foreign key (team_id) references team5(team_id);
