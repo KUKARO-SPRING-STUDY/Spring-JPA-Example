@@ -1,0 +1,8 @@
+[mysqld]
+#쿼리 로그가 출력되도록 설정
+general_log=ON
+# log_output= FILE | TABLE
+# file로 내보내기
+log_output=FILE
+#로그파일 경로 설정
+general_log_file=/var/log/mysql/general/mysql_general.log

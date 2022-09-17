@@ -1,5 +1,8 @@
 CREATE DATABASE IF NOT EXISTS mydb DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
 
+set GLOBAL general_log='ON';
+show variables like 'general%';
+
 use mydb;
 
 CREATE TABLE member(
